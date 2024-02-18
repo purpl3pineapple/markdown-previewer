@@ -5,8 +5,7 @@ import { InputProvider } from "./context/InputContext";
 function App() {
   return (
     <InputProvider>
-      <div className='App'>
-        <h1>Markdown Previewer</h1>
+      <div className='App bg-body-tertiary d-flex justify-content-between p-3'>
         <Editor />
         <Preview />
       </div>

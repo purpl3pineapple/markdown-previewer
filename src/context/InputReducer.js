@@ -9,18 +9,6 @@ const inputReducer = (state, action) => {
         input: action.payload,
         loading: false,
       };
-
-    case "CLEAR_MD":
-      return {
-        ...state,
-        input: "",
-      };
-
-    case "SET_LOADING":
-      return {
-        ...state,
-        loading: true,
-      };
   }
 };
 

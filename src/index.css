@@ -14,7 +14,7 @@ code {
 
 .App {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
 }
 
@@ -23,16 +23,42 @@ code {
 }
 
 #editor {
-  width: 40%;
-  margin: 0 auto;
   overflow-y: scroll;
 }
 
-#preview {
-  width: 60%;
-  margin: 30px auto;
+#editor-label {
+  width: 55%;
+  background-color: #480da8d5;
 }
+
+/* #preview {
+  width: 65%;
+  margin: 30px auto;
+} */
 
 code {
   font-weight: 700;
+}
+
+#preview .marked-emoji-img {
+  height: 35px;
+  width: 35px;
+  margin: auto 10px;
+}
+
+#preview p .marked-emoji-img {
+  height: 20px;
+  width: 20px;
+  margin: auto 2px;
+}
+
+#preview h1,
+#preview h2,
+#preview h3,
+#preview h4,
+#preview h5,
+#preview h6 {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
